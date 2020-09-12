@@ -5,8 +5,9 @@
     background-position: no-repeat;
     background-size: cover;
     color: #fff;
+    padding-top: 115px;
  }
- table {
+ /*table {
     border-collapse: separate;
     border-spacing: 0;
     width: 63%;
@@ -40,29 +41,63 @@ tr:last-child td:first-child {
 }
 tr:last-child td:last-child {
     border-bottom-right-radius: 10px;
-
- /*table {
-  border: 1px solid grey;
-  border-collapse: separate;
-  border-radius: 10px;*/
-    
-/*div {
-  border: 1px solid gray;
-  width: 63%;
-  height: 152px;
-  margin: 115px 38px;
-  text-align: left;
-  border-radius: 5px;
-  border-bottom: none;
 }
-table {
-    border-collapse: collapse;
-}
-tr {
-  border-bottom: 1px solid grey;
-}
-th,td {
-   height: 35px;
-   padding-left: 19px;
+.inline {
+  border-left: none;
 }*/
 
+table {
+    width: 63%;
+    height: 130px;
+    margin: 30px 38px;
+    text-align: left;
+    table-layout: fixed;
+    border: 1px solid #525252;
+    border-radius: 4px;
+    border-spacing: 0;
+}
+
+th,td {
+  padding: 15px 25px;
+  height: 23px;
+  border-bottom: 1px solid #525252;
+}
+
+td:nth-child(3) {
+    text-align: right;
+}
+.color {
+  color: #727272;
+}
+.triangle {
+  display: block;
+  width: 0;
+  height: 0;
+  border: 5px solid transparent;
+  border-top-color:white ;
+  
+  position: relative;
+  left: 47px;
+  bottom: 10px;
+}
+/* создание треугольника:*/
+th:first-child {
+  padding-bottom: 7px;
+}
+/* создание круга:*/
+.circle {
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: #727272;
+    display: inline-block;
+    margin: 3px;
+}
+.circle.white {
+  width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: white;
+    display: inline-block;
+    margin: 3px;
+}
